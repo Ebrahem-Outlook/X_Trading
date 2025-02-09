@@ -1,3 +1,5 @@
+using X_Trading.Application;
+using X_Trading.Infrastructure;
 
 namespace X_Trading.API
 {
@@ -10,6 +12,9 @@ namespace X_Trading.API
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddInfrastructure(builder.Configuration);
+            builder.Services.AddApplication();
+
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
