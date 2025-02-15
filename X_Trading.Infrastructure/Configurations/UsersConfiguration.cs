@@ -4,7 +4,7 @@ using X_Trading.Domain.Users;
 
 namespace X_Trading.Infrastructure.Configurations;
 
-internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
+internal sealed class UsersConfiguration : IEntityTypeConfiguration<User>
 {
     public void Configure(EntityTypeBuilder<User> builder)
     {
